@@ -14,12 +14,8 @@ namespace Domain
 
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.None)]
-		[Display(ResourceType = typeof(Resources.DataDictionary),
-			Name = nameof(Resources.DataDictionary.Id))]
 		public Guid Id { get; set; }
 
-		[Display(ResourceType = typeof(Resources.DataDictionary),
-			Name = nameof(Resources.DataDictionary.InsertDateTime))]
 		public DateTime InsertDateTime { get; set; }
 	}
 }
